@@ -1,5 +1,5 @@
 {
-  "name": "@repo/ui",
+  "name": "@seieunyoo/ui",
   "version": "0.0.0",
   "private": true,
   "exports": {
@@ -9,14 +9,17 @@
   },
   "scripts": {
     "lint": "eslint . --max-warnings 0",
-    "generate:component": "turbo gen react-component"
+    "generate:component": "turbo gen react-component",
+    "prepare": "panda codegen --watch",
+    "panda:dev": "panda --watch"
   },
   "devDependencies": {
-    "@repo/eslint-config": "workspace:*",
-    "@repo/typescript-config": "workspace:*",
+    "@pandacss/dev": "^0.37.2",
+    "@seieunyoo/eslint-config": "workspace:*",
+    "@seieunyoo/typescript-config": "workspace:*",
     "@turbo/gen": "^1.12.4",
-    "@types/node": "^20.11.24",
     "@types/eslint": "^8.56.5",
+    "@types/node": "^20.11.24",
     "@types/react": "^18.2.61",
     "@types/react-dom": "^18.2.19",
     "eslint": "^8.57.0",
