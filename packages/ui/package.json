@@ -5,8 +5,8 @@
   "scripts": {
     "lint": "eslint . --max-warnings 0",
     "generate:component": "turbo gen react-component",
-    "prepare": "panda codegen --watch",
-    "panda:dev": "panda --watch"
+    "prepare:dev": "panda codegen",
+    "panda:dev": "panda"
   },
   "devDependencies": {
     "@pandacss/dev": "^0.37.2",
