@@ -10,5 +10,5 @@ interface ButtonProps {
 }
 
 export const Button = ({ children, className, appName }: ButtonProps) => {
-  return <div className={css({ color: 'black.90' })}>버튼 색깔 노란색</div>;
+  return <div className={css({ color: 'red.50' })}>버튼 색깔 노란색</div>;
 };

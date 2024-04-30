@@ -1,7 +1,7 @@
-import { definePreset } from '@pandacss/dev'
-import * as color from './token'
+import { definePreset } from '@pandacss/dev';
+import * as color from './token';
 
-export default definePreset({
+const preset: ReturnType<typeof definePreset> = definePreset({
   theme: {
     tokens: {
       colors: {
@@ -9,9 +9,11 @@ export default definePreset({
           50: { value: color.red500 },
         },
         black: {
-            90: {value: color.black900}
-        }
-      }
-    }
-  }
-})
+          90: { value: color.black900 },
+        },
+      },
+    },
+  },
+});
+
+export default preset;
